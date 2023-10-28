@@ -13,13 +13,13 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 	<tbody>
 		<tr>
 			<td>marketfront</td>
-			<td>ReactJS Webapp <br> Truffle Development</td>
-			<td>npm run start <br> Truffle compile <br> Truffle migrate</td>
+			<td aligh="left">ReactJS Webapp <br> Truffle Development</td>
+			<td aligh="left"><pre>npm run start <br> Truffle compile <br> Truffle migrate</pre></td>
 		</tr>
 		<tr>
 			<td>ganache</td>
-			<td>Ganache blockchain</td>
-			<td>ganache -h 0.0.0.0</td>
+			<td aligh="left">Ganache blockchain</td>
+			<td aligh="left"><pre>ganache -h 0.0.0.0</pre></td>
 		</tr>
 	</tbody>
 </table>
