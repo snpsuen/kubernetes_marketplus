@@ -28,7 +28,7 @@ More specifcally, a backend K8s pod is dedicated to running the local Ganache bl
 	</tbody>
 </table>
 
-Here are the steps to take in a nutshell in order to deploy the Marketplus dapp in a Kubernetes cluster.
+Here are the steps to take in a nutshell in order to deploy the Marketplus pods in a Kubernetes cluster.
 
 ### 0. Prerequisites
 
