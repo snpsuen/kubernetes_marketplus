@@ -32,7 +32,7 @@ Here are the steps to take in a nutshell in order to deploy the Marketplus dapp 
 
 ### 0. Prerequisites
 
-In our example, a Kind Kubernetes cluster is set up on an Ubuntu Virtualbox VM hosted in a Windows laptop. The VM is attached to an NAT network and assigned a static IP 10.0.2.55.
+In our example, a Kind Kubernetes cluster is set up on an Ubuntu Virtualbox VM hosted in a Windows laptop. The VM is assigned a static IP 10.0.2.55 on a NAT network.
 
 Both the webapp and Ganache pods are exposed as K8s services and handled by a MetalLB load balancer via the VIPs 172.18.0.10 and 172.18.0.11 respectively. the following SSH tunneling rules are added to the putty terminal of the VM to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local host (10.0.2.55) to the corresponding VIPs.
 * L3000 ---> 172.18.0.10:3000
