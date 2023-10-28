@@ -5,9 +5,9 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 
 | K8s pod       | Type          | Process/command     |
 | ------------- |:-------------:| -------------------:|
-| marketfront   | right-aligned | npm run start       |
-|               |               | truffle compile     |
-|               |               | truffle migrate     |
+| marketfront   | right-aligned | npm run start       
+|                                 truffle compile     
+|                                 truffle migrate     
 | ganache       | centered      | ganache -h 0.0.0.0  |
 
 
