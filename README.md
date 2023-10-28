@@ -28,11 +28,21 @@ More specifcally, a backend K8s pod is dedicated to running the local Ganache bl
 	</tbody>
 </table>
 
-Here are the steps to take in a nutshell in order to deploy the Marketplus pods in a Kubernetes cluster.
+Here are the steps to take in a nutshell in order to deploy the Marketplus dapp in a Kubernetes cluster.
 
 ### 0. Prerequisites
 
-In my case, 
+In our example, a Kind Kubernetes cluster is set up on an Ubuntu Virtualbox VM hosted in a Windows laptop. The VM is attached to an NAT network and assigned a static IP 10.0.2.55.
+
+Both the webapp and Ganache pods are exposed as K8s services and handled by a MetalLB load balancer via the VIPs 172.18.0.10 and 172.18.0.11 respectively. the following SSH tunneling rules are added to the putty terminal of the VM to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local host (10.0.2.55) to the corresponding VIPs.
+* L3000 ---> 172.18.0.10:3000
+* L8545 ---> 172.18.0.11:8545
+
+the following port forwarding rules are added to Virtualbox to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local desktop to the VM (10.0.2.55).
+* Host port:3000 ---> 10.0.2.55:3000
+* Nost port:8545 ---> 10.0.2.55:8545
+
+
 
 
 
