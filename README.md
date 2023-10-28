@@ -15,11 +15,11 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 			<td>marketfront</td>
 			<td aligh="left">ReactJS Webapp <br> Truffle Development</td>
 			<td aligh="left">
-				```
+				~~~
 				npm run start
 				Truffle compile
 				Truffle migrate
-				```
+                                ~~~
 			</td>
 		</tr>
 		<tr>
