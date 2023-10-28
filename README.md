@@ -1,5 +1,7 @@
 ## Dapp Segmentation Into Kubernetes Pods
-The purpose of this repo is to decouple the frontend and backend functions of the Marketplus dapp [(see here)](https://github.com/snpsuen/Marketplus) into separate Kubernetes microservices. More specifcally, a backend K8s pod is dedicated to running the local Ganache blockchain to serve the smart contract at work. Meanwhile, the webapp frontend is implemented by another K8s pod to invoke the smart contract remotely on the Ganache pod. It also provide a development environment for compiling and deploying the smart contract to Ganache.
+The purpose of this repo is to decouple the frontend and backend functions of the Marketplus dapp [(see here)](https://github.com/snpsuen/Marketplus) into separate Kubernetes microservices. 
+
+More specifcally, a backend K8s pod is dedicated to running the local Ganache blockchain to serve the smart contract at work. Meanwhile, the webapp frontend is implemented by another K8s pod to invoke the smart contract remotely on the Ganache pod. It also provides a development environment for compiling and deploying the smart contract to Ganache.
 
 ### Workload demarcation between decoupled pods
 <table>
@@ -15,7 +17,7 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 			<td>marketfront</td>
 			<td aligh="left">ReactJS Webapp <br> Truffle Development</td>
 			<td aligh="left">
-			<pre>npm run start<br>Truffle compile<br>Truffle migrate</pre>
+			<pre>npm run start<br>truffle compile<br>truffle migrate</pre>
 			</td>
 		</tr>
 		<tr>
@@ -25,5 +27,12 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 		</tr>
 	</tbody>
 </table>
+
+Here are the steps to take in a nutshell in order to deploy the Marketplus dapp in a Kubernetes cluster.
+
+### 0. Prerequisites
+
+In my case, 
+
 
 
