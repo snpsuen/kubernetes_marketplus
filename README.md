@@ -38,7 +38,7 @@ Both the webapp and Ganache pods are exposed as K8s services handled by a MetalL
 * Source L3000 ---> Destination 172.18.0.10:3000
 * Source L8545 ---> Destination 172.18.0.11:8545
 
-The following port forwarding rules are added to Virtualbox to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local desktop to the VM (10.0.2.55).
+In addition, the following port forwarding rules are added to Virtualbox to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local desktop to the VM (10.0.2.55).
 * Host port:3000 ---> Guest 10.0.2.55:3000
 * Nost port:8545 ---> Guest 10.0.2.55:8545
 
