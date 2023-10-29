@@ -86,7 +86,7 @@ Add the Ganache blockchain from Kubernetes as follows.
 * Network name: Ganache K8s
 * New RPC URL: http://localhost:8545
 * Chain ID: 1337
-* Currency symbol: ETH
+* Currency symbol: ETH <br>
 Click Save and switch to Ganache K8s network
 
 
