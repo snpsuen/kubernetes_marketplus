@@ -40,7 +40,7 @@ Both the webapp and Ganache pods are exposed as K8s services handled by a MetalL
 
 In addition, the following port forwarding rules are added to Virtualbox to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local desktop to the VM (10.0.2.55).
 * Host port:3000 ---> Guest 10.0.2.55:3000
-* Nost port:8545 ---> Guest 10.0.2.55:8545
+* Host port:8545 ---> Guest 10.0.2.55:8545
 
 Another assumption is that the Metamask wallet extension has been installed on the desktop browser. A user account was also created afterward to login to the wallet.
 
