@@ -80,7 +80,11 @@ kubectl exec -it $marketfront_pod -- truffle migrate
 ```
 ### 3. Wire up the Metamask wallet and Ganache
 
-Open and login to the Metameask wallet on the desktop browser.
+Open and login to the Metamask wallet on the desktop browser.
+
+Click settings -> Network -> Add a Network
+
+Add the K8s Ganache blockchain as follows.
 
 
 
