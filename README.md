@@ -63,7 +63,7 @@ kubectl apply -f https://raw.githubusercontent.com/snpsuen/kubernetes_marketplus
 kubectl get pods
 kubectl get svc
 ```
-Connect the frontend to point to the Ganache blockchain service.
+Hook up the frontend to the Ganache blockchain service.
 ```
 marketfront_pod=`kubectl get pods -o jsonpath='{.items[1].metadata.name}'`
 ganache_ip=`kubectl get svc -o jsonpath='{.items[0].spec.clusterIP}'`
@@ -71,12 +71,12 @@ kubectl exec -it $marketfront_pod -- cat /web3/Marketplus/truffle-config.js
 kubectl exec -it $marketfront_pod -- sed -i "/host:/ s/0.0.0.0/${ganache_ip}/" /web3/Marketplus/truffle-config.js
 kubectl exec -it $marketfront_pod -- cat /web3/Marketplus/truffle-config.js
 ```
-Compile the Marketplus Solitity contract and deploy it onto the Ganache blockchain.
+Compile the Marketplus Solitity contract and deploy it onto Ganache.
 ```
 kubectl exec -it $marketfront_pod -- truffle compile
 kubectl exec -it $marketfront_pod -- truffle migrate
 ```
-### 3. Work with broswer and Metamask
+### 3. Connect the Metamask wallet to the dapp
 
 
 
