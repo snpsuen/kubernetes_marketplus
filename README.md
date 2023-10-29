@@ -50,12 +50,24 @@ kubectl apply -f https://raw.githubusercontent.com/snpsuen/kubernetes_marketplus
 kubectl get pods
 kubectl get svc
 ```
-Read the Ganache log, inspect the account keys and other network, blockchain information.
+View the Ganache log, take note of the blockchain proeprties like account keys, chain ID, RPC URL and others.
 ```
 ganache_pod=`kubectl get pods -o jsonpath='{.items[0].metadata.name}'`
 kubectl exec -it $ganache_pod -- cat /web3/ganache.log
 ```
+### 2. Deploy the ReactJS webapp in Kubernetes
 
+Deploy the webapp pod and service based on the given K8s manifest.
+```
+kubectl apply -f https://raw.githubusercontent.com/snpsuen/kubernetes_marketplus/main/ganache_deploy_service.yaml
+kubectl get pods
+kubectl get svc
+```
+View the Ganache log, take note of the blockchain proeprties like account keys, chain ID, RPC URL and others.
+```
+ganache_pod=`kubectl get pods -o jsonpath='{.items[0].metadata.name}'`
+kubectl exec -it $ganache_pod -- cat /web3/ganache.log
+```
 
 
 
