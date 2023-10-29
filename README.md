@@ -82,7 +82,7 @@ kubectl exec -it $marketfront_pod -- truffle migrate
 
 Open and login to the Metamask wallet on the desktop browser. <br>
 Click settings -> Network -> Add a Network <br>
-Add the Ganache blockchain from Kubernetes to the wallet.
+Add the Ganache blockchain from Kubernetes to the wallet manually.
 * Network name: Ganache K8s
 * New RPC URL: http://localhost:8545
 * Chain ID: 1337
@@ -96,9 +96,5 @@ Click Save and switch to Ganache K8s network.
 * Open the Metamask wallet and import accounts chosen from the Ganache pod.
 * Switch to an imported account and add products via the frontend UI.
 * Switch to another imported account and purchase products via the frontend UI.
-* Note the changes in product stock and ETH amount held by the accounts.
-
-
-
-
+* Note the ensuing changes in the product stock number and account ETH.
 
