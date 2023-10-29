@@ -65,6 +65,7 @@ kubectl get svc
 ```
 Connect the frontend to point to the Ganache blockchain service.
 ```
+marketfront_pod=`kubectl get pods -o jsonpath='{.items[1].metadata.name}'`
 ganache_ip=`kubectl get svc -o jsonpath='{.items[0].spec.clusterIP}'`
 kubectl exec -it $marketfront_pod -- cat /web3/Marketplus/truffle-config.js
 kubectl exec -it $marketfront_pod -- sed -i "/host:/ s/0.0.0.0/${ganache_ip}/" /web3/Marketplus/truffle-config.js
