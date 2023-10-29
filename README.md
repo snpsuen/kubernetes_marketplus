@@ -88,7 +88,15 @@ Add the Ganache blockchain from Kubernetes to the wallet.
 * Chain ID: 1337
 * Currency symbol: ETH
 
-Click Save and switch to Ganache K8s network
+Click Save and switch to Ganache K8s network.
+
+### 4. Test it out through the frontend
+
+Open the URL http://localhost:3000 on the desktop browser. <br>
+Open the Metamask wallet and import chosen ccounts from the Ganache log on the K8s pod. <br>
+Switch to an imported account and add products via the frontend UI. <br>
+Switch to another imported account and purchase products via the frontend UI. <br>
+Note the changes in product stock and ETH amount held by the accounts. <br>
 
 
 
