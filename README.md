@@ -93,12 +93,10 @@ Click Save and switch to Ganache K8s network.
 ### 4. Test it out through the frontend
 
 * Open the URL http://localhost:3000 on the desktop browser.
-* Open the Metamask wallet and import chosen ccounts from the Ganache log on the K8s pod.
+* Open the Metamask wallet and import accounts chosen from the Ganache pod.
 * Switch to an imported account and add products via the frontend UI.
 * Switch to another imported account and purchase products via the frontend UI.
 * Note the changes in product stock and ETH amount held by the accounts.
-
-
 
 
 
