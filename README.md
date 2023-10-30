@@ -44,6 +44,10 @@ In addition, the following port forwarding rules are added to Virtualbox to redi
 
 Another assumption is that the Metamask wallet extension has been installed on the desktop browser. A user account was also created afterward to login to the wallet.
 
+#### Special Remark
+
+Of particular note is that in our case, the Kubernetes cluster is set up in a so-called bare metal environment, which is running on a Virtualbox VM inside a personal Windows laptop. As such, this is a truly decentralised and autonomous platform without any reliance on or involvement of a cloud service provider or centralised ecosystem.
+
 ### 1. Deploy the Genache blockchain in Kubernetes
 
 Deploy the Ganache pod and service based on the given K8s manifest.
