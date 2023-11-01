@@ -35,8 +35,8 @@ Here are the steps to take in a nutshell in order to deploy the Marketplus dapp 
 In our example, a Kind Kubernetes cluster is set up on an Ubuntu Virtualbox VM hosted in a Windows desktop. The VM is assigned a static IP 10.0.2.55 on a NAT network.
 
 Both the webapp and Ganache pods are exposed as K8s services handled by a MetalLB load balancer via the VIPs 172.18.0.10 and 172.18.0.11 respectively. The following SSH tunneling rules are added to the putty terminal of the VM to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local host (10.0.2.55) to the corresponding VIPs.
-* Source L3000 ---> Destination 172.18.0.10:3000
-* Source L8545 ---> Destination 172.18.0.11:8545
+* Source L3000 ---> Destination 172.18.0.11:3000
+* Source L8545 ---> Destination 172.18.0.10:8545
 
 In addition, the following port forwarding rules are added to Virtualbox to redirect the webapp traffic (port 3000) and Ganache traffic (port 8545) from the local desktop to the VM (10.0.2.55).
 * Host port:3000 ---> Guest 10.0.2.55:3000
