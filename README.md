@@ -3,7 +3,7 @@ The purpose of this repo is to decouple the frontend and backend functions of th
 
 More specifcally, a backend K8s pod is dedicated to running the local Ganache blockchain to serve the smart contract at work. Meanwhile, the webapp frontend is implemented by another K8s pod to invoke the smart contract remotely on the Ganache pod. It also provides a development environment for compiling and deploying the smart contract to Ganache.
 
-![Interaction between dapp components in Kubernetes](https://drive.google.com/file/d/1CIq_J-kmILoVUcCuu_X_vL65tRr9s1HS/view?usp=drive_link)
+![Interaction between dapp components in Kubernetes](https://raw.githubusercontent.com/snpsuen/Marketplus/main/src/dapp_segmentation_kubernetes02.png)
 
 ### Workload demarcation between decoupled pods
 <table>
